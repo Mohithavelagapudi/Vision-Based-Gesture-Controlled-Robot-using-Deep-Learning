@@ -22,17 +22,18 @@ The robot interprets human hand gestures in real time to perform navigation task
 | **Built-from-Scratch Robot**      | Complete mechanical build, wiring, and code integration designed by the team.                               |
 
 ----
-### 🧩 System Architecture
 
-```
+## 🧩 System Architecture
+
+```mermaid
 graph TD
-A[Camera Input (OpenCV)] --> B[Hand Landmark Detection (MediaPipe)]
-B --> C[Gesture Classification (CNN Model - TensorFlow)]
-C --> D[Gesture-to-Action Mapping Layer]
-D --> E[Motor Control Unit (PWM + GPIO)]
-E --> F[Robot Movement (H-Bridge + DC Motors)]
-```
+    A["Camera Input (OpenCV)"] --> B["Hand Landmark Detection (MediaPipe)"]
+    B --> C["Gesture Classification (CNN - TensorFlow)"]
+    C --> D["Gesture-to-Action Mapping Layer"]
+    D --> E["Motor Control Unit (PWM + GPIO)"]
+    E --> F["Robot Movement (H-Bridge + DC Motors)"]
 
+```
 ----
 
 ### ⚙️ Technical Stack
@@ -50,48 +51,48 @@ E --> F[Robot Movement (H-Bridge + DC Motors)]
 
 ### 🚀 Project Pipeline
 
-1. **Data Acquisition**
+1️⃣ Data Acquisition
 
-- Collected gesture videos under varying lighting/backgrounds.
+   - Collected gesture videos under varying lighting and background conditions.
 
-- Labeled gestures for classification model training.
+   -  Labeled gesture frames for supervised model training.
 
-2. **Model Training**
+2️⃣ Model Training
 
-- Built and trained a CNN using TensorFlow to classify gestures.
+   - Built and trained a Convolutional Neural Network (CNN) using TensorFlow for gesture classification.
 
-- Optimized using transfer learning for limited dataset size.
+   - Applied transfer learning to improve generalization on a limited custom dataset.
 
-3. **Computer Vision Processing**
+3️⃣ Computer Vision Processing
 
-- Used MediaPipe Hands for landmark extraction.
+   - Utilized MediaPipe Hands for 21-point landmark extraction from live video feed.
 
-- Integrated OpenCV for preprocessing and segmentation.
+   - Integrated OpenCV for preprocessing, contour detection, and segmentation to improve robustness.
 
-4. **Gesture → Action Mapping**
+4️⃣ Gesture → Action Mapping
 
-- Mapped recognized gestures to robot control commands:
+  | Gesture        | Action        |
+  | -------------- | ------------- |
+  | ✋ Stop         | Halt motors   |
+  | 👍 Thumbs Up   | Move Forward  |
+  | 👎 Thumbs Down | Move Backward |
+  | 🤟 Rock        | Turn Right    |
+  | ✌️ Peace       | Turn Left     |
 
-- ✋ Stop → Halt motors
 
-- 👍 Move Forward
+5️⃣ Motor Control
 
-- 👎 Move Backward
+   - Controlled dual DC motors through PWM signals via an MDD10A H-Bridge driver connected to the Raspberry Pi’s GPIO pins.
 
-- 🤟 Turn Right
-
-- ✌️ Turn Left
-
-5. **Motor Control**
-
-- Controlled motors via GPIO PWM signals through MDD10A H-Bridge.
-
-- Implemented smooth speed control and safe shutdown routines.
+   - Implemented smooth acceleration/deceleration and safe shutdown routines to protect hardware during operation.
 
 ----
 ### 📸 Real Robot Build
 
 🧩 Fully built and tested — below are snapshots from our final build and live testing sessions.
+
+🎥 [You can watch the video here](https://drive.google.com/file/d/1VRiRxztKW1HbA51uEGdjKxSKgo_ikSBu/view?usp=sharing)
+
 
 - ✅ Physical robot assembled using custom chassis, motor mount, and onboard camera.
 
@@ -126,6 +127,8 @@ Inference Latency: <50ms (real-time gesture recognition)
 ---
 
 ### 🪄 Example Demonstration
+
+🎥 [Watch the full demo video here](https://drive.google.com/file/d/1gDslwxUc42q6Ab_ui_Cp4RA9wO_7yLVr/view?usp=sharing)
 
 
 
