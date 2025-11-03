@@ -8,6 +8,12 @@ An end-to-end robotic control system built from scratch — integrating computer
 This project implements a gesture-controlled mobile robot using computer vision (OpenCV + MediaPipe) and deep neural gesture recognition models (TensorFlow/Keras).
 The robot interprets human hand gestures in real time to perform navigation tasks like move forward, reverse, turn left/right, and stop, leveraging a Raspberry Pi for onboard computation and motor control via an H-Bridge driver.
 
+
+<p align="center">
+  <img src="IMG_4956.jpg" alt="" width="800"/>
+</p>
+
+
 🛠️ **Built entirely from scratch** — from mechanical assembly and hardware wiring to computer vision pipeline and control logic — as part of a Reinforcement Learning & Robotics course capstone.
 
 ----
@@ -95,6 +101,11 @@ graph TD
 
 
 - ✅ Physical robot assembled using custom chassis, motor mount, and onboard camera.
+
+  <p align="center">
+  <img src="97e1fbd5-4bbb-4b26-8b59-cd101058960d.jpg" alt="" width="500"/>
+</p>
+
 
 - ✅ Controlled entirely via visual input — no manual remote or wired control.
   
