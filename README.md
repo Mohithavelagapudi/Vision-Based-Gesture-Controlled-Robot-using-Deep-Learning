@@ -11,7 +11,7 @@ The robot interprets human hand gestures in real time to perform navigation task
 
 <p align="center">
   <img src="e9b4b8b2-278a-4a64-a92a-897b89d1bb86.JPG" alt="Left Image" width="45%" height="445">
-  <img src="IMG_4956.jpg" alt="Right Image" width="45%">
+  <img src="IMG_4956.jpg" alt="Right Image" width="45%" height="445">
 </p>
 
 
