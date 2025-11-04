@@ -14,7 +14,7 @@ The robot interprets human hand gestures in real time to perform navigation task
 </p>
 
 
-🛠️ **Built entirely from scratch** — from mechanical assembly and hardware wiring to computer vision pipeline and control logic — as part of a Reinforcement Learning & Robotics course capstone.
+🛠️ **Built entirely from scratch** — from mechanical assembly and hardware wiring to computer vision pipeline and control logic 
 
 ----
 ### 🎯 Key Features
