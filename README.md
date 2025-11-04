@@ -10,8 +10,10 @@ The robot interprets human hand gestures in real time to perform navigation task
 
 
 <p align="center">
-  <img src="IMG_4956.jpg" alt="" width="800"/>
+  <img src="e9b4b8b2-278a-4a64-a92a-897b89d1bb86.JPG" alt="Left Image" width="45%" height="445">
+  <img src="IMG_4956.jpg" alt="Right Image" width="45%">
 </p>
+
 
 
 🛠️ **Built entirely from scratch** — from mechanical assembly and hardware wiring to computer vision pipeline and control logic 
@@ -74,6 +76,10 @@ graph TD
    - Utilized MediaPipe Hands for 21-point landmark extraction from live video feed.
 
    - Integrated OpenCV for preprocessing, contour detection, and segmentation to improve robustness.
+
+     <p align="center">
+  <img src="image (54).png" alt="" width="1000"/>
+</p>
 
 4️⃣ Gesture → Action Mapping
 
