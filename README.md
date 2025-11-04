@@ -1,4 +1,4 @@
-# 🤖 Vision-Based Gesture-Controlled Robot using Deep Reinforcement Learning
+# 🤖 Vision-Based Gesture-Controlled Robot using Deep Learning
 
 An end-to-end robotic control system built from scratch — integrating computer vision, deep learning, and motor control for real-time gesture-driven navigation.
 
